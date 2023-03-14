@@ -2,111 +2,111 @@
 
 ![Design preview for the Entertainment web app coding challenge](./preview.jpg)
 
-## Welcome! 👋
+## ¡Bienvenido! 👋
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+Gracias por comprar este desafío de codificación premium de Frontend Mentor.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+Los desafíos [Frontend Mentor](https://www.frontendmentor.io) te ayudan a mejorar tus habilidades de codificación construyendo proyectos realistas. Estos desafíos premium son piezas de portafolio perfectas, así que siéntete libre de usar lo que creas en tu portafolio para mostrar a los demás.
 
-**To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
+**Para realizar este desafío, necesitas tener conocimientos sólidos de HTML, CSS y JavaScript.**
 
-## The challenge
+## El reto
 
-Your challenge is to build out this entertainment web application and get it looking as close to the design as possible.
+Tu reto es crear esta aplicación web de entretenimiento y conseguir que se parezca lo máximo posible al diseño.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Puedes utilizar las herramientas que quieras para completar el reto. Así que si tienes algo que te gustaría practicar, no dudes en intentarlo.
 
-We provide the data in a local `data.json` file, so use that to populate the content on the first load. If you want to take it up a notch, feel free to build this as a full-stack application!
+Proporcionamos los datos en un archivo local `data.json`, así que utilízalo para rellenar el contenido en la primera carga. Si quieres llevarlo a un nivel superior, ¡no dudes en construirlo como una aplicación completa!
 
-Your users should be able to:
+Los usuarios deben ser capaces de:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Navigate between Home, Movies, TV Series, and Bookmarked Shows pages
-- Add/Remove bookmarks from all movies and TV series
-- Search for relevant shows on all pages
-- **Bonus**: Build this project as a full-stack application
-- **Bonus**: If you're building a full-stack app, we provide authentication screen (sign-up/login) designs if you'd like to create an auth flow
+- Ver el diseño óptimo de la aplicación en función del tamaño de la pantalla de su dispositivo.
+- Ver los estados hover de todos los elementos interactivos de la página
+- Navegar entre las páginas de inicio, películas, series de televisión y programas favoritos.
+- Añadir/eliminar favoritos de todas las películas y series de TV
+- Buscar programas relevantes en todas las páginas
+- **Bonus**: Construir este proyecto como una aplicación completa
+- **Bonificación**: Si estás construyendo una aplicación full-stack, te proporcionamos diseños de pantallas de autenticación (registro/inicio de sesión) por si quieres crear un flujo de autenticación.
 
-### Expected Behaviour
+### Comportamiento esperado
 
 - General
-  - The navigation menu should be fixed to the left for larger screens. Use the "Desktop - Home" page in the design as a visual reference.
-- Home
-  - The trending section should scroll sideways to reveal other trending shows
-  - Any search input should search through all shows (i.e. all movies and TV series)
-- Movies
-  - This page should only display shows with the "Movie" category
-  - Any search input should search through all movies
-- TV Series
-  - This page should only display shows with the "TV Series" category
-  - Any search input should search through all TV series
-- Bookmarked Shows
-  - This page should display all bookmarked shows from both categories
-  - Any search input should search through all bookmarked shows
+  - El menú de navegación debe fijarse a la izquierda para pantallas más grandes. Utilice la página "Escritorio - Inicio" en el diseño como referencia visual.
+- Inicio
+  - La sección de tendencias debería desplazarse lateralmente para mostrar otros programas de tendencias.
+  - Cualquier entrada de búsqueda debe buscar en todos los programas (es decir, todas las películas y series de televisión).
+- Películas
+  - Esta página sólo debe mostrar programas con la categoría "Película".
+  - Cualquier entrada de búsqueda debe buscar en todas las películas
+- Series de TV
+  - Esta página sólo debe mostrar los programas de la categoría "Series de TV
+  - Cualquier entrada de búsqueda debe buscar en todas las series de TV
+- Programas favoritos
+  - Esta página debe mostrar todos los programas marcados de ambas categorías
+  - Cualquier entrada de búsqueda debe buscar en todos los programas marcados
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+¿Quieres que te ayudemos con el reto? [Únete a nuestra comunidad de Slack](https://www.frontendmentor.io/slack) y haz preguntas en el canal **#help**.
 
-## Where to find everything
+## Dónde encontrarlo todo
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+Tu tarea consiste en crear el proyecto a partir del archivo de diseño proporcionado. Proporcionamos las versiones Sketch y Figma del diseño, así que puedes elegir qué herramienta prefieres utilizar. Puedes descargar el archivo de diseño en la plataforma. **La descarga del diseño viene con un archivo `README.md` para ayudarte a configurarlo.
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+Todos los recursos necesarios para este proyecto se encuentran en la carpeta `/assets`. Los activos ya están exportados para el tamaño de pantalla correcto y optimizado. Algunas imágenes son reutilizables en múltiples tamaños de pantalla. Así que si usted no ve una imagen en una carpeta específica, por lo general será en otra carpeta para esa página.
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project. Our fonts always come from [Google Fonts](https://fonts.google.com/).
+El sistema de diseño en el archivo de diseño le dará más información sobre los diversos colores, fuentes y estilos utilizados en este proyecto. Nuestras fuentes siempre provienen de [Google Fonts](https://fonts.google.com/).
 
-## Building your project
+## Construyendo tu proyecto
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Siéntete libre de utilizar cualquier flujo de trabajo con el que te sientas cómodo. A continuación se sugiere un proceso, pero no se siente como si tuviera que seguir estos pasos:
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/). **⚠️ IMPORTANT ⚠️: There are already a couple of `.gitignore` files in this project. Please do not remove them or change the content of the files. If you create a brand new project, please use the `.gitignore` files provided in your new codebase. This is to avoid the accidental upload of the design files to GitHub. With these premium challenges, please be sure not to share the design files in your GitHub repo. Thanks!**
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+1. Separa el `starter-code` del resto de este proyecto y renómbralo a algo significativo para ti. 2. Inicializa el código base como un repositorio público en [GitHub](https://github.com/). Crear un repositorio hará más fácil compartir tu código con la comunidad si necesitas ayuda. Si no estás seguro de cómo hacerlo, [echa un vistazo a este recurso de Try Git](https://try.github.io/). **⚠️ IMPORTANTE ⚠️: Ya hay un par de archivos `.gitignore` en este proyecto. Por favor, no los elimines ni cambies su contenido. Si crea un proyecto nuevo, utilice los archivos `.gitignore` proporcionados en su nueva base de código. Esto es para evitar la subida accidental de los archivos de diseño a GitHub. Con estos desafíos premium, por favor asegúrese de no compartir los archivos de diseño en su repositorio de GitHub. Gracias.
+2. Configura tu repositorio para publicar tu código en una dirección web. Esto también será útil si necesitas ayuda durante un reto, ya que puedes compartir la URL de tu proyecto con la URL de tu repositorio. Hay varias maneras de hacer esto, y proporcionamos algunas recomendaciones a continuación.
+3. Echa un vistazo a los diseños para empezar a planificar cómo abordarás el proyecto. Este paso es crucial para ayudarte a pensar con antelación en las clases CSS para crear estilos reutilizables.
+4. Antes de añadir ningún estilo, estructura tu contenido con HTML. Escribir primero tu HTML puede ayudarte a centrar tu atención en crear un contenido bien estructurado.
+5. Escribe los estilos base para tu proyecto, incluyendo estilos generales de contenido, como `font-family` y `font-size`.
+6. Comienza a añadir estilos en la parte superior de la página y ve bajando. Pasa a la siguiente sección sólo cuando estés satisfecho de haber completado el área en la que estás trabajando.
 
-## Deploying your project
+## Despliegue del proyecto
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+Como se mencionó anteriormente, hay muchas maneras de alojar su proyecto de forma gratuita. Nuestros hosts recomendados son:
 
 - [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- Vercel](https://vercel.com/)
+- Netlify](https://www.netlify.com/)
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+Puedes alojar tu sitio utilizando una de estas soluciones o cualquiera de nuestros otros proveedores de confianza. [Más información sobre nuestros proveedores recomendados y de confianza](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-## Create a custom `README.md`
+## Crear un `README.md` personalizado
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Recomendamos encarecidamente sobreescribir este `README.md` con uno personalizado. Hemos proporcionado una plantilla dentro del archivo [`README-template.md`](./README-template.md) en este código de inicio.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+La plantilla proporciona una guía sobre qué añadir. Un `README` personalizado le ayudará a explicar su proyecto y a reflexionar sobre lo aprendido. Por favor, siéntete libre de editar nuestra plantilla tanto como quieras.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+Una vez que haya añadido su información a la plantilla, elimine este archivo y cambie el nombre del archivo `README-template.md` a `README.md`. Esto hará que aparezca como el archivo README de su repositorio.
 
-## Submitting your solution
+## Envío de la solución
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+Envíe su solución a la plataforma para que el resto de la comunidad pueda verla. Sigue nuestra ["Guía completa para enviar soluciones"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) para obtener consejos sobre cómo hacerlo.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+Recuerde que si está buscando comentarios sobre su solución, asegúrese de hacer preguntas cuando la envíe. Cuanto más específico y detallado seas con tus preguntas, más posibilidades tendrás de recibir valiosos comentarios de la comunidad.
 
-**⚠️ IMPORTANT ⚠️: With these premium challenges, please be sure not to upload the design files to GitHub when you're submitting to the platform and sharing it around. If you've created a brand new project, the easiest way to do that is to copy across the `.gitignore` provided in this starter project.**
+**⚠️ IMPORTANTE ⚠️: Con estos desafíos premium, asegúrate de no subir los archivos de diseño a GitHub cuando los envíes a la plataforma y los compartas. Si has creado un proyecto nuevo, la forma más fácil de hacerlo es copiar el archivo `.gitignore` proporcionado en este proyecto de inicio.
 
-## Sharing your solution
+## Compartir tu solución
 
-There are multiple places you can share your solution:
+Hay varios lugares donde puedes compartir tu solución:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+1. 1. Comparta su página de solución en el canal **#finished-projects** de la [comunidad Slack](https://www.frontendmentor.io/slack). 
+2. 2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) y mencionar **@frontendmentor**, incluyendo el repositorio y URLs en vivo en el tweet. Nos encantaría echar un vistazo a lo que has construido y ayudar a compartirlo.
+3. Comparte tu solución en otros canales sociales como LinkedIn.
+4. Escribe un blog sobre tu experiencia en la creación de tu proyecto. Escribir sobre tu flujo de trabajo, tus decisiones técnicas y hablar sobre tu código es una forma brillante de reforzar lo que has aprendido. Algunas de las mejores plataformas para escribir son [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/) y [CodeNewbie](https://community.codenewbie.org/).
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+Proporcionamos plantillas para ayudarte a compartir tu solución una vez que la hayas enviado a la plataforma. Por favor, edítalas e incluye preguntas específicas cuando busques feedback. 
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+Cuanto más específico seas con tus preguntas, más probabilidades tendrás de que otro miembro de la comunidad te dé su opinión.
 
-## Got feedback for us?
+## ¿Tienes comentarios para nosotros?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+Nos encanta recibir comentarios. Siempre buscamos mejorar nuestros retos y nuestra plataforma. Así que si tienes algo que te gustaría mencionar, por favor envía un correo electrónico a hi[at]frontendmentor[dot]io.
 
-**Have fun building!** 🚀
+**¡Diviértete construyendo!
