@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { gretting } from "./utilities/gretting";
+import { rootReducer } from "./reducer";
 
 const store = configureStore({
   reducer: {
     // * reducers aquí
-    saludate: gretting
+    app: rootReducer
   },
   // * otras opciones de configuración aquí
 });
