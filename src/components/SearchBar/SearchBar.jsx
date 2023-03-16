@@ -5,13 +5,20 @@ import { updateSearchValue } from "../../app/action";
 import { SearchResults } from "../SearchResults/SearchResult";
 
 function SearchBar() {
+  //* hooks
   const dispatch = useDispatch();
   const searchValue = useSelector(state => state.app.searchValue);
-  const data = useSelector(state => state.app.cards);
+  const data = useSelector(state => state.app.all);
   const [ Results, setResult ] = useState([]);
   const { pathname } = useLocation();
 
-  
+  // * handle del input
+  function handleInput(event) {
+    const value = event.target.value;
+    dispatch(updateSearchValue(value));
+  }
+
+  // * buscador para Home
   useEffect(() => {
     if(searchValue.length > 0 && pathname === '/' ) {
       const temp = data.filter(item => {
@@ -27,11 +34,25 @@ function SearchBar() {
       setResult([]);
     }
   }, [searchValue]);
-  
-  function handleInput(event) {
-    const value = event.target.value;
-    dispatch(updateSearchValue(value));
-  }
+
+  // * placeholder change value
+  const [ placeholder, setPlaceholder ] = useState('');
+  useEffect(() => {
+    switch(pathname) {
+      case '/':
+        setPlaceholder('Search for Movies or TV series');
+      break;
+      case '/movies':
+        setPlaceholder('Search for movies');
+      break;
+      case '/tvseries':
+        setPlaceholder('Search for Tv series');
+      break;
+      case '/bookmarkedmovies':
+        setPlaceholder('Search for Bookmark shows');
+      break;
+    }
+  }, [pathname]);
 
   return(
     <Fragment>
@@ -40,6 +61,8 @@ function SearchBar() {
           <label htmlFor="">
             <p>🔍</p>
             <input
+              style={{color: 'black'}}
+              placeholder={placeholder}
               type="text"
               onChange={handleInput}
               value={searchValue}

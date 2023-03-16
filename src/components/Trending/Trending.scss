@@ -1,0 +1,10 @@
+.Trending {
+  &__container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    overflow-x: scroll;
+    gap: 20px
+  }
+}

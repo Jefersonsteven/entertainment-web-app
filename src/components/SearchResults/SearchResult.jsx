@@ -7,6 +7,7 @@ function SearchResults({ data }) {
 
   return(
     <div className="SearchResults">
+      {data.length < 1 && <p>No hay resultados</p>}
       {data?.map(item => {
         return (
           <Card

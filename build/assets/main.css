@@ -1,6 +1,78 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*********************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: white;
+  background-color: #10141E;
+}
 /*!************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Card/Card.scss ***!
   \************************************************************************************************************************/
 .Card {
-  padding: 20px;
+  width: 164px;
+  margin-bottom: 15px;
+}
+.Card div:nth-child(1) {
+  position: relative;
+}
+.Card div:nth-child(1) div {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 25px;
+  background-color: rgba(22, 29, 47, 0.4666666667);
+}
+.Card div:nth-child(1) img {
+  width: 100%;
+  border-radius: 5px;
+}
+.Card div:nth-child(2) {
+  display: flex;
+}
+.Card div:nth-child(2) p {
+  margin: 0;
+  margin: 10px 10px 10px 0px;
+  font-size: 1.1rem;
+}
+.Card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Cards/Cards.scss ***!
+  \**************************************************************************************************************************/
+.Cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/routes/Home/Home.scss ***!
+  \********************************************************************************************************************/
+.Home h2 {
+  margin: 20px 0px;
+}
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SearchResults/SearchResult.scss ***!
+  \*****************************************************************************************************************************************/
+.SearchResults {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
 }

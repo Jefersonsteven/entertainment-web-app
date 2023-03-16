@@ -3,7 +3,9 @@ import { UPDATE_SEARCH_VALUE } from "./action";
 
 
 const initialState = {
-  cards: [ ...data ],
+  all: [ ...data ],
+  cards: data.filter(item => item.isTrending != true),
+  trending: data.filter(item => item.isTrending === true),
   searchValue: '',
 };
 
