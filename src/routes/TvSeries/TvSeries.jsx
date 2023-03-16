@@ -1,10 +1,18 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { useSelector } from "react-redux";
+import { Cards } from "../../components/Cards/Cards";
 
 
 function TvSeries() {
+  const data = useSelector(state => state.app.tvseries);
 
   return(
-    <h2>TvSeries</h2>
+    <Fragment>
+      <div className="TvSeries">
+        <h2 className="Title">Tv Series</h2>
+        <Cards data={data}/>
+      </div>
+    </Fragment>
   )
 }
 

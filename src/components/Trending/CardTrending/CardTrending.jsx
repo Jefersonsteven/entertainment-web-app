@@ -12,7 +12,7 @@ function CardTrending({
 
 
   return (
-    <div className="Card">
+    <div className="CardTrending">
       <div>
         <div>
           <Bookmark />
@@ -20,11 +20,13 @@ function CardTrending({
         <img src={image?.small} alt={title} />
       </div>
       <div>
-        <p>{year}</p>
-        <p>{category}</p>
-        <p>{rating}</p>
+        <div>
+          <p>{year}</p>
+          <p>{category}</p>
+          <p>{rating}</p>
+        </div>
+        <h3>{title}</h3>
       </div>
-      <h3>{title}</h3>
     </div>
   )
 }

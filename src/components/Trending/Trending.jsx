@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Card } from "../Card/Card";
 import { CardTrending } from "./CardTrending/CardTrending";
 import "./Trending.scss";
 
@@ -19,7 +20,8 @@ function Trending() {
             year={item?.year}
             category={item?.category}
             rating={item?.rating}
-            image={item?.thumbnail?.regular}
+            image={item?.thumbnail?.trending}
+            isBookmarked={item?.isBookmarked}
           />
           )
         })}

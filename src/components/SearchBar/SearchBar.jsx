@@ -6,11 +6,19 @@ import { SearchResults } from "../SearchResults/SearchResult";
 
 function SearchBar() {
   //* hooks
+  const { all, movies, tvseries, bookmarked } = useSelector(state => {
+    return {
+      all: state.app.all,
+      movies: state.app.movies,
+      tvseries: state.app.tvseries,
+      bookmarked: state.app.bookmarked
+    }
+  });
   const dispatch = useDispatch();
   const searchValue = useSelector(state => state.app.searchValue);
-  const data = useSelector(state => state.app.all);
-  const [ Results, setResult ] = useState([]);
   const { pathname } = useLocation();
+  const [ Results, setResult ] = useState([]);
+  const [ data, setData ] = useState([]);
 
   // * handle del input
   function handleInput(event) {
@@ -18,9 +26,31 @@ function SearchBar() {
     dispatch(updateSearchValue(value));
   }
 
-  // * buscador para Home
+  // * buscador
+
   useEffect(() => {
-    if(searchValue.length > 0 && pathname === '/' ) {
+    switch(pathname) {
+      case '/':
+        setData(all);
+      break;
+      case '/movies':
+        setData(movies);
+      break;
+      case '/tvseries':
+        setData(tvseries);
+      break;
+      case '/bookmarkedmovies':
+        setData(bookmarked);
+      break;
+    }
+  
+    return () => {
+      setData([]);
+    }
+  }, [pathname])
+
+  useEffect(() => {
+    if(searchValue.length  > 0) {
       const temp = data.filter(item => {
         const itemTitle = item.title.toLowerCase();
         const title = searchValue.toLowerCase();

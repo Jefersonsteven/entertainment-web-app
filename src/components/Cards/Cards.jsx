@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import React from "react";
 import { Card } from "../Card/Card";
 import "./Cards.scss";
 
 
-function Cards() {
-  const data = useSelector(state => state.app.cards);
-  const searchValue = useSelector(state => state.app.searchValue);
+function Cards({data}) {
 
   return(
     <div className="Cards">
@@ -18,7 +15,9 @@ function Cards() {
             year={item.year}
             category={item.category}
             rating={item.rating}
-            image={item.thumbnail.regular}
+            thumbnail={item?.thumbnail}
+            isBookmarked={item.isBookmarked}
+            isTrending={item.isTrending}
           />
         )
       })}

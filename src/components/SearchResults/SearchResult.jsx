@@ -16,7 +16,8 @@ function SearchResults({ data }) {
             year={item?.year}
             category={item?.category}
             rating={item?.rating}
-            image={item?.thumbnail?.regular}
+            thumbnail={item?.thumbnail}
+            isBookmarked={item.isBookmarked}
           />
         )
       })}
