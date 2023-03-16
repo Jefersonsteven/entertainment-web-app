@@ -1,11 +1,12 @@
 import React from "react";
 import { Card } from "../Card/Card";
+import "./SearchResult.scss";
 
 function SearchResults({ data }) {
 
 
   return(
-    <div className="SearchResults Container">
+    <div className="SearchResults">
       {data?.map(item => {
         return (
           <Card

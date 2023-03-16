@@ -37,7 +37,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
           },
         ],
       },
@@ -55,16 +55,16 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src', 'assets'),
-          to: 'assets'
-        }
+          from: path.resolve(__dirname, "src", "assets"),
+          to: "assets",
+        },
       ],
     }),
   ],
   devServer: {
     static: path.join(__dirname, "dist"),
     compress: true,
-    port: 3008,
+    port: 3003,
     open: true,
     historyApiFallback: true,
   },

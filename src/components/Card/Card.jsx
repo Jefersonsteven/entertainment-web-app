@@ -1,5 +1,6 @@
 import React from "react";
 import { Bookmark } from "../Icons/Bookmark"
+import "./Card.scss"
 
 function Card({
   title,
@@ -11,7 +12,7 @@ function Card({
 
 
   return (
-    <div className="Card Box">
+    <div className="Card">
       <div>
         <div>
           <Bookmark />

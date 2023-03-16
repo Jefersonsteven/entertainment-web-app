@@ -1,0 +1,34 @@
+.Card {
+  width: 164px;
+  margin-bottom: 15px;
+  & div:nth-child(1) {
+    position: relative;
+    & div {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border-radius: 25px;
+      background-color: #161d2f77;
+    }
+    & img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  & div:nth-child(2) {
+    display: flex;
+    & p {
+      margin: 0;
+      margin: 10px 10px 10px 0px;
+      font-size: 1.1rem;
+    }
+  }
+  & h3 {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+}
