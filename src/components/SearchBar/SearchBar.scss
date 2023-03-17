@@ -1,0 +1,29 @@
+.SearchBar {
+  width: 100%;
+  margin: 20px 10px;
+  & form {
+    width: 100%;
+    & label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      & svg {
+        transform: scale(0.763);
+      }
+      & input {
+        font-family: 'Outfit', sans-serif;
+        width: 80%;
+        height: 24px;
+        border: none;
+        outline: none;
+        background-color: #10141E;
+        color: white;
+        font-size: 1.6rem;
+        padding-left: 10px;
+      }
+      & input:focus {
+        border-bottom: 1px solid #5A698F;
+      }
+    }
+  }
+}

@@ -2,15 +2,19 @@ import React from "react";
 import { Card } from "../Card/Card";
 import "./SearchResult.scss";
 
-function SearchResults({ data }) {
+function SearchResults({ data, searchValue }) {
 
 
   return(
-    <div className="SearchResults">
-      {data.length < 1 && <p>No hay resultados</p>}
+    <div className="SearchResult">
+      <div className="SearchResults">
+      {data.length > 0 && <p>Found {data.length} results for '{searchValue}' </p>}
+      {data.length < 1 && <p>Not Found results for {searchValue} </p>}
+      <div className="SearchResults__container">
       {data?.map(item => {
         return (
           <Card
+            className="Card"
             key={`1${item?.title}5`}
             title={item?.title}
             year={item?.year}
@@ -21,7 +25,10 @@ function SearchResults({ data }) {
           />
         )
       })}
+      </div>
     </div>
+    </div>
+
   )
 }
 

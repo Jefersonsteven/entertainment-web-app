@@ -1,0 +1,38 @@
+.Nav {
+  padding: 20px;
+  width: 100%;
+  background-color: #161D2F;
+  & div:nth-child(1) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    & svg:nth-child(1) {
+      transform: scale(0.783);
+      & path {
+        width: 25px;
+        height: 20px;
+      }
+    }
+    & div:nth-child(2) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      & .Link {
+        height: 20px;
+        & svg {
+          transform: scale(0.798);
+        }
+      }
+    }
+    & .User {
+      width: 22px;
+      & img {
+        border-radius: 25px;
+        outline: 2px solid white;
+        width: 100%;
+      }
+    }
+  }
+}
+

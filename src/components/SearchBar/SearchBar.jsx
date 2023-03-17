@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useParams } from "react-router-dom";
 import { updateSearchValue } from "../../app/action";
 import { SearchResults } from "../SearchResults/SearchResult";
+import "./SearchBar.scss";
+import { Search } from "../Icons/Search"
 
 function SearchBar() {
   //* hooks
@@ -89,9 +91,8 @@ function SearchBar() {
       <div className="SearchBar">
         <form action="">
           <label htmlFor="">
-            <p>🔍</p>
+            <Search/>
             <input
-              style={{color: 'black'}}
               placeholder={placeholder}
               type="text"
               onChange={handleInput}
@@ -100,7 +101,7 @@ function SearchBar() {
           </label>
         </form>
       </div>
-      {searchValue.length >= 1 && <SearchResults data={Results} />}
+      {searchValue.length >= 1 && <SearchResults data={Results} searchValue={searchValue}/>}
     </Fragment>
     
   )
