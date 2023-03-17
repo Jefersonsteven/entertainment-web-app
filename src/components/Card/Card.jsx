@@ -12,7 +12,7 @@ import {
 } from "../../app/action";
 import "./Card.scss"
 
-function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrending }) {
+function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrending, className }) {
   const dispatch = useDispatch();
 
   function handleClick() {
@@ -50,7 +50,7 @@ function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrendi
   }
 
   return (
-    <div className="Card">
+    <div className={className}>
       <div>
         <div onClick={handleClick} className={`${isBookmarked}`}>
           <Bookmark />
@@ -58,11 +58,13 @@ function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrendi
         <img src={thumbnail?.regular?.small} alt={title} />
       </div>
       <div>
-        <p>{year}</p>
-        <p>{category}</p>
-        <p>{rating}</p>
+        <div>
+          <p>{year}</p>
+          <p>{category}</p>
+          <p>{rating}</p>
+        </div>
+        <h3>{title}</h3>
       </div>
-      <h3>{title}</h3>
     </div>
   )
 }

@@ -4,7 +4,16 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     width: 100%;
-    overflow-x: scroll;
-    gap: 20px
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    user-select: none;
+    cursor: grab;
+  }
+  &__container:active {
+    cursor: grabbing;
+  }
+  &__container::-webkit-scrollbar {
+    display: none;
   }
 }

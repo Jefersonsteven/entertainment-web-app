@@ -10,6 +10,7 @@ function Cards({data}) {
       {data?.map(item => {
         return (
           <Card
+            className="Card"
             key={item.title}
             title={item.title}
             year={item.year}
