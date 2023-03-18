@@ -23,6 +23,9 @@
       border-radius: 25px;
       background-color: #161d2f77;
     }
+    & div:hover{
+      display: none;
+    }
     & img {
       width: 100%;
       border-radius: 5px;

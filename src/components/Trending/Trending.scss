@@ -1,4 +1,10 @@
 .Trending {
+  padding-left: 15px;
+  & h2 {
+    margin: 15px 0px;
+    font-size: 2rem;
+    font-weight: 300;
+  }
   &__container {
     display: grid;
     grid-auto-flow: column;

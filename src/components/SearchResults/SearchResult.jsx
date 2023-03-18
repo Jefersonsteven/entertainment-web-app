@@ -22,6 +22,7 @@ function SearchResults({ data, searchValue }) {
             rating={item?.rating}
             thumbnail={item?.thumbnail}
             isBookmarked={item.isBookmarked}
+            isTrending={item.isTrending}
           />
         )
       })}

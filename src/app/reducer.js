@@ -10,7 +10,6 @@ import {
   UPDATE_TVSERIES,
 } from "./action";
 
-
 const initialState = {
   all: [ ...data ],
   cards: data.filter(item => item.isTrending != true),
@@ -20,6 +19,17 @@ const initialState = {
   tvseries: data.filter(item => item.category === 'TV Series'),
   searchValue: '',
 };
+
+function update(updateState, action) {
+  let indexTemp;
+  const temp = updateState.forEach((element, index) => {
+    if (element.title === action.payload.title) indexTemp = index;
+  });
+  const arr = [...updateState];
+  arr.splice(indexTemp, 1, action.payload.obj);
+
+  return arr;
+}
 
 function rootReducer(state = initialState, action) {
   switch (action.type) {
@@ -43,42 +53,27 @@ function rootReducer(state = initialState, action) {
     case UPDATE_ALL:
       return {
         ...state,
-        all: [
-          ...state.all.filter((item) => item.title !== action.payload.title),
-          action.payload.obj
-        ],
+        all: update(state.all, action)
       };
     case UPDATE_CARDS:
       return {
         ...state,
-        cards: [
-          ...state.cards.filter((item) => item.title !== action.payload.title),
-          action.payload.obj
-        ],
+        cards: update(state.cards, action)
       };
     case UPDATE_TRENDING:
       return {
         ...state,
-        trending: [
-          ...state.trending.filter((item) => item.title !== action.payload.title),
-          action.payload.obj
-        ],
+        trending: update(state.trending, action)
       };
     case UPDATE_MOVIES:
       return {
         ...state,
-        movies: [
-          ...state.movies.filter((item) => item.title !== action.payload.title),
-          action.payload.obj
-        ],
+        movies: update(state.movies, action)
       };
     case UPDATE_TVSERIES:
       return {
         ...state,
-        tvseries: [
-          ...state.tvseries.filter((item) => item.title !== action.payload.title),
-          action.payload.obj
-        ],
+        tvseries: update(state.tvseries, action)
       };
 
     default:

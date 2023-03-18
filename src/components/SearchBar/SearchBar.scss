@@ -13,7 +13,7 @@
       & input {
         font-family: 'Outfit', sans-serif;
         width: 80%;
-        height: 24px;
+        height: 28px;
         border: none;
         outline: none;
         background-color: #10141E;
@@ -22,6 +22,8 @@
         padding-left: 10px;
       }
       & input:focus {
+        height: 40px;
+        padding-bottom: 10px;
         border-bottom: 1px solid #5A698F;
       }
     }
