@@ -16,7 +16,7 @@ function Cards({data}) {
             year={item.year}
             category={item.category}
             rating={item.rating}
-            thumbnail={item?.thumbnail}
+            thumbnail={item.thumbnail}
             isBookmarked={item.isBookmarked}
             isTrending={item.isTrending}
           />

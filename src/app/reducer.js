@@ -22,7 +22,7 @@ const initialState = {
 
 function update(updateState, action) {
   let indexTemp;
-  const temp = updateState.forEach((element, index) => {
+  const foreach = updateState.forEach((element, index) => {
     if (element.title === action.payload.title) indexTemp = index;
   });
   const arr = [...updateState];

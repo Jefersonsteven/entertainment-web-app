@@ -19,7 +19,7 @@ function SearchBar() {
   const dispatch = useDispatch();
   const searchValue = useSelector(state => state.app.searchValue);
   const { pathname } = useLocation();
-  const [ Results, setResult ] = useState([]);
+  const [ results, setResults ] = useState([]);
   const [ data, setData ] = useState([]);
 
   // * handle del input
@@ -34,7 +34,6 @@ function SearchBar() {
     switch(pathname) {
       case '/':
         setData(all);
-      break;
       case '/movies':
         setData(movies);
       break;
@@ -53,17 +52,17 @@ function SearchBar() {
 
   useEffect(() => {
     if(searchValue.length  > 0) {
-      const temp = data.filter(item => {
+        
+      setResults(data.filter(item => {
         const itemTitle = item.title.toLowerCase();
         const title = searchValue.toLowerCase();
         
         return itemTitle.includes(title);
-      });
-      setResult(temp);
+      }));
     }
 
     return () => {
-      setResult([]);
+      setResults([]);
     }
   }, [searchValue]);
 
@@ -101,7 +100,7 @@ function SearchBar() {
           </label>
         </form>
       </div>
-      {searchValue.length >= 1 && <SearchResults data={Results} searchValue={searchValue}/>}
+      {searchValue.length >= 1 && <SearchResults results={results} setResults={setResults} searchValue={searchValue}/>}
     </Fragment>
     
   )

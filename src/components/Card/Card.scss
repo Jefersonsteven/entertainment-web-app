@@ -66,7 +66,9 @@
 .CardTrending {
   position: relative;
   width: 240px;
+  overflow: hidden;
   & div:nth-child(1) {
+    width: 100%;
     position: relative;
     & .true {
       & svg {
@@ -99,7 +101,6 @@
     bottom: 20px;
     padding: 0px 20px;
     & h3 {
-      
       font-weight: 300;
     }
     & div {
@@ -123,11 +124,11 @@
       }
       & p:nth-child(5) {
         position: absolute;
-        right: 0;
-        bottom: -10px;
+        right: -2px;
+        bottom: -12px;
         width: 34px;
         height: 21px;
-        background-color: rgba(255, 255, 255, 0.253);
+        background-color: rgba(255, 255, 255, 0.123);
         border-radius: 25px;
         display: grid;
         place-items: center;
