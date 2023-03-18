@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { useSelector } from "react-redux";
 import { Cards } from "../../components/Cards/Cards";
+import "./TvSeries.scss";
 
 
 function TvSeries() {

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { useSelector } from "react-redux";
 import { Cards } from "../../components/Cards/Cards";
+import "./Movies.scss";
 
 
 function Movies() {
@@ -9,7 +10,7 @@ function Movies() {
   return(
     <Fragment>
       <div className="Movies">
-        <h2 className="Title">Movies</h2>
+        <h2>Movies</h2>
         <Cards data={data}/>
       </div>
     </Fragment>

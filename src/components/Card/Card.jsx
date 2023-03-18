@@ -11,6 +11,8 @@ import {
   updateTvSeries
 } from "../../app/action";
 import "./Card.scss"
+import { Movie } from "../Icons/Movie";
+import { TvSeries } from "../Icons/Tvseries";
 
 function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrending, className }) {
   const dispatch = useDispatch();
@@ -60,7 +62,13 @@ function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrendi
       <div>
         <div>
           <p>{year}</p>
-          <p>{category}</p>
+          <p>•</p>
+          <p>
+            {category === 'Movie' && (<Movie fill={"#fff"}/>)}
+            {category === 'TV Series' && (<TvSeries fill={"#fff"}/>)}
+            {category}
+          </p>
+          <p>•</p>
           <p>{rating}</p>
         </div>
         <h3>{title}</h3>

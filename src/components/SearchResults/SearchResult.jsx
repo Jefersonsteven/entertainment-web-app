@@ -15,7 +15,7 @@ function SearchResults({ data, searchValue }) {
         return (
           <Card
             className="Card"
-            key={`1${item?.title}5`}
+            key={item?.title}
             title={item?.title}
             year={item?.year}
             category={item?.category}
