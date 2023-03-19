@@ -20,7 +20,6 @@ function SearchBar() {
   const dispatch = useDispatch();
   const searchValue = useSelector(state => state.app.searchValue);
   const { pathname } = useLocation();
-  const results = useSelector(state => state.app.results);
   const [ data, setData ] = useState([]);
 
   // * handle del input
@@ -28,6 +27,7 @@ function SearchBar() {
     const value = event.target.value;
     dispatch(updateSearchValue(value));
   }
+  console.log(pathname);
 
   // * buscador
 
@@ -35,6 +35,7 @@ function SearchBar() {
     switch(pathname) {
       case '/':
         setData(all);
+      break;
       case '/movies':
         setData(movies);
       break;
@@ -65,7 +66,7 @@ function SearchBar() {
     }
 
     return () => {
-      setResults([]);
+      dispatch(setResults([]));
     }
   }, [searchValue]);
 
@@ -74,7 +75,7 @@ function SearchBar() {
   useEffect(() => {
     switch(pathname) {
       case '/':
-        setPlaceholder('Search for Movies or TV series');
+        setPlaceholder('Search for movies or TV series');
       break;
       case '/movies':
         setPlaceholder('Search for movies');
@@ -103,7 +104,7 @@ function SearchBar() {
           </label>
         </form>
       </div>
-      {searchValue.length >= 1 && <SearchResults searchValue={searchValue}/>}
+      {searchValue.length >= 1 && <SearchResults/>}
     </Fragment>
     
   )

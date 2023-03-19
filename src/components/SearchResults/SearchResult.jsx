@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import { Card } from "../Card/Card";
 import "./SearchResult.scss";
 
-function SearchResults({ searchValue }) {
+function SearchResults() {
+  const searchValue = useSelector(state => state.app.searchValue);
   const results = useSelector(state => state.app.results);
 
   return(
