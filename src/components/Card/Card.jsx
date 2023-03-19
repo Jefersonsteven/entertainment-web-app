@@ -14,10 +14,12 @@ import "./Card.scss"
 import { Movie } from "../Icons/Movie";
 import { TvSeries } from "../Icons/Tvseries";
 import { setResults } from "../../app/action";
+import { useLocation } from "react-router-dom";
 
 function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrending, className }) {
   const dispatch = useDispatch();
   const results = useSelector(state => state.app.results);
+  const pathname = useLocation();
 
   function update(updateState, action) {
     let indexTemp;
@@ -80,8 +82,8 @@ function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrendi
           <Bookmark />
         </div>
         {isTrending === false && (<img src={thumbnail?.regular?.small} alt={title} />)}
-        {isTrending === true && screen.width < 500 && (<img src={thumbnail?.trending?.small} alt={title} />)}
-        {isTrending === true && screen.width > 500 && (<img src={thumbnail?.trending?.large} alt={title} />)}
+        {isTrending === true && (<img src={thumbnail?.trending?.small} alt={title} />)}
+        {pathname === '/' && isTrending === true && screen.width > 500 && (<img src={thumbnail?.trending?.large} alt={title} />)}
       </div>
       <div>
         <div>

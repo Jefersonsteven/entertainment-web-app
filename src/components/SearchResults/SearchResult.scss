@@ -23,9 +23,12 @@
     overflow: scroll;
     max-height: 100vh;
   }
+  &__container::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 700px) {
   .SearchResults {
     padding: 0px 15px;
     & > p {
@@ -40,6 +43,19 @@
       padding: 0px 10px;
       overflow: scroll;
       max-height: 100vh;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .SearchResults {
+    padding: 0px 15px;
+    & > p {
+      font-size: 3.2rem;
+      font-weight: 300;
+    }
+    &__container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }

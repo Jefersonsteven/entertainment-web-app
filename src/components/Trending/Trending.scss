@@ -36,3 +36,17 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .Trending {
+    overflow: hidden;
+    & h2 {
+      margin: 15px 0px 25px 25px;
+      font-size: 3.2rem;
+    }
+    &__container {
+      padding: 0px 25px;
+      gap: 42px;
+    }
+  }
+}

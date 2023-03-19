@@ -42,7 +42,7 @@
 
 @media (min-width: 400px) {
   .Nav {
-    width: 100%;
+    width: 90%;
     max-width: 719px;
     margin: 25px;
     border-radius: 10px;
@@ -65,4 +65,34 @@
     }
   }
 }
+
+@media (min-width: 640px) {
+  .Nav {
+    width: 92%;
+  }
+}
+
+@media (min-width: 768px) {
+  .Nav {
+    width: 100%;
+    max-width: 94%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Nav {
+    width: auto;
+    height: 95vh;
+    padding: 25px 20px;
+   & div:nth-child(1) {
+    height: 100%;
+    flex-direction: column;
+    & div:nth-child(2) {
+      display: grid;
+      grid-template-columns: 1fr ;
+    }
+   }
+  }
+}
+
 
