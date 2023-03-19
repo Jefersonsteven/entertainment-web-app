@@ -1,78 +1,11 @@
-/*!*********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
-  \*********************************************************************************************************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  color: white;
-  background-color: #10141E;
-}
-/*!************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Card/Card.scss ***!
-  \************************************************************************************************************************/
-.Card {
-  width: 164px;
-  margin-bottom: 15px;
-}
-.Card div:nth-child(1) {
-  position: relative;
-}
-.Card div:nth-child(1) div {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  width: 35px;
-  height: 35px;
-  display: grid;
-  place-items: center;
-  border-radius: 25px;
-  background-color: rgba(22, 29, 47, 0.4666666667);
-}
-.Card div:nth-child(1) img {
-  width: 100%;
-  border-radius: 5px;
-}
-.Card div:nth-child(2) {
-  display: flex;
-}
-.Card div:nth-child(2) p {
-  margin: 0;
-  margin: 10px 10px 10px 0px;
-  font-size: 1.1rem;
-}
-.Card h3 {
-  margin: 0;
-  font-size: 1.4rem;
-}
-/*!**************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Cards/Cards.scss ***!
-  \**************************************************************************************************************************/
-.Cards {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-}
-/*!********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/routes/Home/Home.scss ***!
-  \********************************************************************************************************************/
-.Home h2 {
-  margin: 20px 0px;
-}
-/*!*****************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SearchResults/SearchResult.scss ***!
-  \*****************************************************************************************************************************************/
-.SearchResults {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 20px;
-}
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap);
+*{margin:0;padding:0;box-sizing:border-box}html{font-size:62.5%}body{overflow-x:hidden;font-size:1.6rem;font-family:"Outfit",sans-serif;color:#fff;background-color:#10141e}#root{padding-top:60px;width:100vw;height:100vh;overflow-x:hidden}
+.Nav{position:fixed;z-index:1;top:0;left:0;padding:20px;width:100%;background-color:#161d2f}.Nav div:nth-child(1){display:flex;width:100%;align-items:center;justify-content:space-between}.Nav div:nth-child(1) svg:nth-child(1){transform:scale(0.783)}.Nav div:nth-child(1) svg:nth-child(1) path{width:25px;height:20px}.Nav div:nth-child(1) div:nth-child(2){display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:20px}.Nav div:nth-child(1) div:nth-child(2) .Link{height:20px}.Nav div:nth-child(1) div:nth-child(2) .Link svg{transform:scale(0.798)}.Nav div:nth-child(1) .User{width:22px}.Nav div:nth-child(1) .User img{border-radius:25px;outline:2px solid #fff;width:100%}
+.Card{width:164px;height:162px;margin-bottom:15px}.Card div:nth-child(1){display:flex;position:relative}.Card div:nth-child(1) .true svg path{fill:#fff}.Card div:nth-child(1) div{position:absolute;right:8px;top:8px;width:32px;height:32px;display:grid;place-items:center;border-radius:25px;background-color:rgba(22,29,47,.4666666667)}.Card div:nth-child(1) img{width:100%;border-radius:5px}.Card div:nth-child(2){display:flex;flex-direction:column}.Card div:nth-child(2) p{margin:0;margin:10px 5px 10px 0px;font-size:1.1rem;display:flex;align-items:center}.Card div:nth-child(2) p:nth-child(3) svg{margin-right:2px;transform:scale(0.58)}.Card div:nth-child(2) p:nth-child(2),.Card div:nth-child(2) p:nth-child(4){margin:0;margin-right:2px}.Card div:nth-child(2) p:nth-child(5){margin-left:3px}.Card h3{margin:0;font-size:1.4rem;font-weight:300}.CardTrending{position:relative;width:240px;overflow:hidden}.CardTrending div:nth-child(1){width:100%;position:relative}.CardTrending div:nth-child(1) .true svg path{fill:#fff}.CardTrending div:nth-child(1) div{position:absolute;right:8px;top:8px;width:32px;height:32px;display:grid;place-items:center;border-radius:25px;background-color:rgba(22,29,47,.4666666667)}.CardTrending div:nth-child(1) img{width:100%;height:140px;border-radius:5px}.CardTrending div:nth-child(2){width:100%;position:absolute;bottom:20px;padding:0px 20px}.CardTrending div:nth-child(2) h3{font-weight:300}.CardTrending div:nth-child(2) div{display:flex;align-items:center;gap:5px}.CardTrending div:nth-child(2) div p{margin:0;font-size:1.2rem;font-weight:300}.CardTrending div:nth-child(2) div p:nth-child(3){display:flex;align-items:center}.CardTrending div:nth-child(2) div p:nth-child(3) svg{transform:scale(0.58)}.CardTrending div:nth-child(2) div p:nth-child(4){display:none}.CardTrending div:nth-child(2) div p:nth-child(5){position:absolute;right:-2px;bottom:-12px;width:34px;height:21px;background-color:rgba(255,255,255,.123);border-radius:25px;display:grid;place-items:center;margin:0}.CardTrending div:nth-child(2) h3{margin:0;font-size:1.5rem;font-weight:300}
+.Cards{display:grid;justify-items:center;grid-template-columns:1fr 1fr;padding:0px 6px}
+.Trending{padding-left:15px}.Trending h2{margin:15px 0px;font-size:2rem;font-weight:300}.Trending__container{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;width:100%;overflow-x:auto;scroll-behavior:smooth;gap:20px;user-select:none;cursor:grab}.Trending__container:active{cursor:grabbing}.Trending__container::-webkit-scrollbar{display:none}
+.Home h2{margin:15px 0px 20px 15px;font-size:2rem;font-weight:300}
+.Movies h2{margin:15px 15px;font-size:2rem;font-weight:300}
+.TvSeries h2{margin:15px 15px;font-size:2rem;font-weight:300}
+.SearchResult{gap:20px;width:100%;height:100vh;margin-top:20px;padding:0px 5px}.SearchResults{display:grid;grid-template-rows:40px 1fr}.SearchResults>p{padding-left:10px;display:flex;align-items:center}.SearchResults__container{margin-top:20px;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;overflow:scroll;max-height:100vh}
+.SearchBar{width:100%;margin:20px 10px}.SearchBar form{width:100%}.SearchBar form label{display:flex;align-items:center;width:100%}.SearchBar form label svg{transform:scale(0.763)}.SearchBar form label input{font-family:"Outfit",sans-serif;width:80%;height:28px;border:none;outline:none;background-color:#10141e;color:#fff;font-size:1.6rem;padding-left:10px}.SearchBar form label input:focus{height:40px;padding-bottom:10px;border-bottom:1px solid #5a698f}

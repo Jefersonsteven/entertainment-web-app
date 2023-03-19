@@ -8,6 +8,7 @@ import {
   UPDATE_TRENDING,
   UPDATE_MOVIES,
   UPDATE_TVSERIES,
+  SET_RESULTS
 } from "./action";
 
 const initialState = {
@@ -18,6 +19,7 @@ const initialState = {
   movies: data.filter(item => item.category === 'Movie'),
   tvseries: data.filter(item => item.category === 'TV Series'),
   searchValue: '',
+  results: [],
 };
 
 function update(updateState, action) {
@@ -75,6 +77,11 @@ function rootReducer(state = initialState, action) {
         ...state,
         tvseries: update(state.tvseries, action)
       };
+    case SET_RESULTS:
+      return {
+        ...state,
+        results: [ ...action.payload ]
+      }
 
     default:
       return { ...state };

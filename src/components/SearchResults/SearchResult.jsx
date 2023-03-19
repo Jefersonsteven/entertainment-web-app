@@ -1,9 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Card } from "../Card/Card";
 import "./SearchResult.scss";
 
-function SearchResults({ results, setResults, searchValue }) {
-
+function SearchResults({ searchValue }) {
+  const results = useSelector(state => state.app.results);
 
   return(
     <div className="SearchResult">
@@ -14,8 +15,6 @@ function SearchResults({ results, setResults, searchValue }) {
       {results?.map(item => {
         return (
           <Card
-            results={results}
-            setResults={setResults}
             className="Card"
             key={item?.title}
             title={item?.title}
@@ -23,8 +22,8 @@ function SearchResults({ results, setResults, searchValue }) {
             category={item?.category}
             rating={item?.rating}
             thumbnail={item?.thumbnail}
-            isBookmarked={item.isBookmarked}
-            isTrending={item.isTrending}
+            isBookmarked={item?.isBookmarked}
+            isTrending={item?.isTrending}
           />
         )
       })}

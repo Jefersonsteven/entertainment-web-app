@@ -6,6 +6,7 @@ export const UPDATE_CARDS = 'UPDATE_CARDS';
 export const UPDATE_TRENDING = 'UPDATE_TRENDING';
 export const UPDATE_MOVIES = 'UPDATE_MOVIES';
 export const UPDATE_TVSERIES = 'UPDATE_TVSERIES';
+export const SET_RESULTS = 'UPDATE_RESULTS';
 
 
 
@@ -39,4 +40,8 @@ export const updateMovies = (title, obj) => {
 
 export const updateTvSeries = (title, obj) => {
   return { type: UPDATE_TVSERIES, payload: { obj, title } }
+}
+
+export const setResults = (arr) => {
+  return { type: SET_RESULTS, payload: arr  }
 }

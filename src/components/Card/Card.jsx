@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Bookmark } from "../Icons/Bookmark"
 import { 
   addToFavorites, 
@@ -13,9 +13,11 @@ import {
 import "./Card.scss"
 import { Movie } from "../Icons/Movie";
 import { TvSeries } from "../Icons/Tvseries";
+import { setResults } from "../../app/action";
 
-function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrending, className, setResults, results }) {
+function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrending, className }) {
   const dispatch = useDispatch();
+  const results = useSelector(state => state.app.results);
 
   function update(updateState, action) {
     let indexTemp;
@@ -38,7 +40,7 @@ function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrendi
   function handleClick() {
     if (isBookmarked) {
       dispatch(removeFavorite(title));
-      setResults(update(results, action));
+      dispatch(setResults(update(results, action)));
       dispatch(updateAll(title, { title, year, category, rating, thumbnail, isBookmarked: !isBookmarked, isTrending }));
       if(category === 'Movie') {
         dispatch(updateMovies(title, { title, year, category, rating, thumbnail, isBookmarked: !isBookmarked, isTrending }));
@@ -54,7 +56,7 @@ function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrendi
       }
     } else {
       dispatch(addToFavorites({ title, year, category, rating, thumbnail, isBookmarked: !isBookmarked, isTrending }));
-      setResults(update(results, action));
+      dispatch(setResults(update(results, action)));
       dispatch(updateAll(title, { title, year, category, rating, thumbnail, isBookmarked: !isBookmarked, isTrending }));
       if(category === 'Movie') {
         dispatch(updateMovies(title, { title, year, category, rating, thumbnail, isBookmarked: !isBookmarked, isTrending }));

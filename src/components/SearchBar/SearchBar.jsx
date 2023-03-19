@@ -5,6 +5,7 @@ import { updateSearchValue } from "../../app/action";
 import { SearchResults } from "../SearchResults/SearchResult";
 import "./SearchBar.scss";
 import { Search } from "../Icons/Search"
+import { setResults } from "../../app/action";
 
 function SearchBar() {
   //* hooks
@@ -19,7 +20,7 @@ function SearchBar() {
   const dispatch = useDispatch();
   const searchValue = useSelector(state => state.app.searchValue);
   const { pathname } = useLocation();
-  const [ results, setResults ] = useState([]);
+  const results = useSelector(state => state.app.results);
   const [ data, setData ] = useState([]);
 
   // * handle del input
@@ -52,13 +53,15 @@ function SearchBar() {
 
   useEffect(() => {
     if(searchValue.length  > 0) {
-        
-      setResults(data.filter(item => {
+
+      const temp = data.filter(item => {
         const itemTitle = item.title.toLowerCase();
         const title = searchValue.toLowerCase();
         
         return itemTitle.includes(title);
-      }));
+      });
+
+      dispatch(setResults(temp));
     }
 
     return () => {
@@ -100,7 +103,7 @@ function SearchBar() {
           </label>
         </form>
       </div>
-      {searchValue.length >= 1 && <SearchResults results={results} setResults={setResults} searchValue={searchValue}/>}
+      {searchValue.length >= 1 && <SearchResults searchValue={searchValue}/>}
     </Fragment>
     
   )
