@@ -14,7 +14,6 @@
     scroll-behavior: smooth;
     gap: 20px;
     user-select: none;
-    cursor: grab;
   }
   &__container:active {
     cursor: grabbing;
@@ -39,6 +38,7 @@
 
 @media (min-width: 1440px) {
   .Trending {
+    margin-right: 20px;
     overflow: hidden;
     & h2 {
       margin: 15px 0px 25px 25px;

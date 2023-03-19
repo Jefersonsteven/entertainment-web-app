@@ -16,6 +16,14 @@
         }
       }
     }
+    & div:hover {
+      background-color: white;
+      & svg {
+        & path {
+          stroke: black;
+        }
+      }
+    }
     & div {
       position: absolute;
       right: 8px;
@@ -76,6 +84,14 @@
       & svg {
         & path {
           fill: #fff;
+        }
+      }
+    }
+    & div:hover {
+      background-color: white;
+      & svg {
+        & path {
+          stroke: black;
         }
       }
     }
