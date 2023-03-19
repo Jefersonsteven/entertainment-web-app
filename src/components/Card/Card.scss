@@ -1,7 +1,11 @@
 .Card {
-  width: 164px;
-  height: 162px;
-  margin-bottom: 15px;
+  max-width: 164px;
+  max-height: 162px;
+  margin: 10px 0px;
+  & > div:nth-child(1) {
+    width: 164px;
+    height: 110px;
+  }
   & div:nth-child(1) {
     display: flex;
     position: relative;
@@ -15,7 +19,7 @@
     & div {
       position: absolute;
       right: 8px;
-      top: 8px;
+      top: 8px; 
       width: 32px;
       height: 32px;
       display: grid;
@@ -36,7 +40,7 @@
     flex-direction: column;
     & p {
       margin: 0;
-      margin: 10px 5px 10px 0px;
+      margin: 5px 5px 5px 0px;
       font-size: 1.1rem;
       display: flex;
       align-items: center;
@@ -51,6 +55,7 @@
      p:nth-child(4) {
       margin: 0;
       margin-right: 2px;
+      opacity: 50%;
      }
      & p:nth-child(5) {
       margin-left: 3px;
@@ -65,7 +70,7 @@
 
 .CardTrending {
   position: relative;
-  width: 240px;
+  min-width: 240px;
   overflow: hidden;
   & div:nth-child(1) {
     width: 100%;
@@ -139,6 +144,99 @@
       margin: 0;
       font-size: 1.5rem;
       font-weight: 300;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .Card {
+    max-width: 220px;
+    max-height: 192px;
+    margin: 10px 0px;
+    & > div:nth-child(1) {
+      width: 100%;
+      height: 140px;
+    }
+    & div:nth-child(1) {
+      & img {
+        width: 220px;
+        border-radius: 8px;
+      }
+      & div {
+        right: 15px;
+        top: 15px;
+      }
+    }
+    & div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      & p {
+        margin: 8px 8px 8px 0px;
+        font-size: 1.3rem;
+      }
+      & p:nth-child(3) {
+        & svg {
+          margin-right: 4px;
+          transform: scale(0.600);
+        }
+      }
+      & p:nth-child(2),
+       p:nth-child(4) {
+        margin-right: 2px;
+       }
+       & p:nth-child(5) {
+        margin-left: 5px;
+       }
+    }
+    & h3 {
+      font-size: 1.8rem;
+    }
+  }
+
+
+  .CardTrending {
+    min-width: 470px;
+    & div:nth-child(1) {
+      & img {
+        height: 230px;
+        border-radius: 8px;
+      }
+      & div {
+        right: 25px;
+        top: 20px;
+      }
+    }
+    & div:nth-child(2) {
+      bottom: 30px;
+      padding: 0px 25px;
+      & div {
+        gap: 8px;
+        & p {
+          font-size: 1.5rem;
+        }
+        & p:nth-child(3){
+          & svg {
+            transform: scale(0.600);
+            margin-right: 2px;
+          }
+        }
+        & p:nth-child(4) {
+          display: inline;
+        }
+        & p:nth-child(5) {
+          position: relative;
+          right: 0;
+          bottom: 0;
+          width: auto;
+          height: auto;
+          background-color: rgba(255, 255, 255, 0);
+          border-radius: 25px;
+          display: inline;
+        }
+      }
+      & h3 {
+        font-size: 2.4rem;
+      }
     }
   }
 }

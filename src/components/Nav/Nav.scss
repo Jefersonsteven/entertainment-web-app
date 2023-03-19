@@ -3,7 +3,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 15px;
   width: 100%;
   background-color: #161D2F;
   & div:nth-child(1) {
@@ -35,6 +35,32 @@
         border-radius: 25px;
         outline: 2px solid white;
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .Nav {
+    width: 100%;
+    max-width: 719px;
+    margin: 25px;
+    border-radius: 10px;
+    padding: 18px;
+    & div:nth-child(1) {
+      & svg:nth-child(1) {
+        transform: scale(1);
+      }
+      & div:nth-child(2) {
+        gap: 30px;
+        & .Link {
+          & svg {
+            transform: scale(1);
+          }
+        }
+      }
+      & .User {
+        width: 32px;
       }
     }
   }

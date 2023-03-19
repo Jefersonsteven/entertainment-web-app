@@ -16,11 +16,19 @@ body {
   font-family: 'Outfit', sans-serif;
   color: white;
   background-color: #10141E;
+  width: 100%;
+  height: 100vh;
 }
 
 #root {
+  width: 100%;
   padding-top: 60px;
-  width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
+}
+
+
+@media (min-width: 400px) {
+  #root {
+    padding-top: 100px;
+  }
 }

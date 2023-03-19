@@ -10,10 +10,12 @@ function BookmarkedMovies() {
     <Fragment>
       <div className="TvSeries">
         <h2 className="Title">Bookmarked Movies</h2>
-        <Cards data={data}/>
+        <Cards data={data.filter(item => item.category === 'Movie')}/>
+        <h2 className="Title">Bookmarked Series</h2>
+        <Cards data={data.filter(item => item.category === 'TV Series')}/>
       </div>
     </Fragment>
   )
 }
 
-export { BookmarkedMovies };
+export { BookmarkedMovies }; 

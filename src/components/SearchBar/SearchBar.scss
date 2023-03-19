@@ -1,5 +1,6 @@
 .SearchBar {
   width: 100%;
+  margin: 0;
   margin: 20px 10px;
   & form {
     width: 100%;
@@ -25,6 +26,31 @@
         height: 40px;
         padding-bottom: 10px;
         border-bottom: 1px solid #5A698F;
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .SearchBar {
+    width: 100%;
+    margin: 30px 20px;
+    & form {
+      & label {
+        gap: 5px;
+        & svg {
+          transform: scale(1);
+        }
+        & input {
+          font-size: 2.4rem;
+          padding-left: 20px;
+        }
+        & input:focus {
+          width: 89%;
+          height: 40px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #5A698F;
+        }
       }
     }
   }

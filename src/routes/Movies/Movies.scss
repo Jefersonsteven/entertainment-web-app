@@ -5,3 +5,15 @@
     font-weight: 300;
   }
 }
+
+
+@media (min-width: 400px) {
+  .Movies {
+    padding-bottom: 20px;
+    & h2 {
+      margin: 25px 0px 10px 25px;
+      font-size: 3.2rem;
+      letter-spacing: -0.5px;
+    }
+  }
+}

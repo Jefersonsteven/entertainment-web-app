@@ -4,3 +4,10 @@
   grid-template-columns: 1fr 1fr;
   padding: 0px 6px;
 }
+
+@media (min-width: 700px) {
+  .Cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 10px;
+  }
+}

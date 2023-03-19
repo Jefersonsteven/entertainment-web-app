@@ -80,7 +80,8 @@ function Card({ title, year, category, rating, thumbnail, isBookmarked, isTrendi
           <Bookmark />
         </div>
         {isTrending === false && (<img src={thumbnail?.regular?.small} alt={title} />)}
-        {isTrending === true && (<img src={thumbnail?.trending?.small} alt={title} />)}
+        {isTrending === true && screen.width < 500 && (<img src={thumbnail?.trending?.small} alt={title} />)}
+        {isTrending === true && screen.width > 500 && (<img src={thumbnail?.trending?.large} alt={title} />)}
       </div>
       <div>
         <div>
